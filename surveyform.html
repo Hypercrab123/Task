@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Library Survey Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #4a4a9a;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .form-container {
+            background-color: #ffffff;
+            padding: 50px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2{
+            display: flex;
+            color: #ccc;
+            text-align: center ;
+          font-size: 40px;
+        } 
+        .form-container label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+        .form-container label1{
+             margin: 10px;
+            text-align: center;
+            font-weight: bold;
+        }
+        .form-container input[type="text"],
+        .form-container input[type="email"],
+        .form-container input[type="number"],
+        .form-container select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .form-container input[type="radio"] {
+            margin: 0px 20px 20px 20px;
+        }
+        .form-container .checkbox-container {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        .form-container input[type="checkbox"] {
+            margin-right: 10px;
+        }
+        .form-container button[type="submit"] {
+            margin-left: 80%;
+            width: 20%;
+            padding: 10px;
+            background-color: #4285F4;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .form-container button[type="submit"]:hover {
+            background-color: #357ae8;
+
+        }
+    </style>
+</head>
+<body>
+    <div2>
+    <h2>Code Library Survey Form</h2>
+
+    <div class="form-container">
+        
+        <form>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter Your Name">
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Enter Your Email">
+
+            <label for="age">Age</label>
+            <input type="number" id="age" name="age" placeholder="Enter Your Age">
+
+            <label>Gender</label>
+            <label1 for="Gender">Male</label>
+            <label1 for="Gender">Female</label>
+            <label1 for="Gender">Other</label>
+            <br>
+            <input type="radio" id="male" name="gender" value="male">
+            <input type="radio" id="female" name="gender" value="female">
+            <input type="radio" id="other" name="gender" value="other">
+            <br>
+           
+
+            <label for="description">Which Option Best Describes You?</label>
+            <select id="description" name="description">
+                <option value="teacher">Teacher</option>
+                <option value="student">Student</option>
+                <option value="developer">Developer</option>
+                <option value="other">Other</option>
+            </select>
+
+            <label>Your Best Programming Languages?</label>
+            <div class="checkbox-container">
+                <label><input type="checkbox" name="language" value="c">C</label>
+                <label><input type="checkbox" name="language" value="python">Python</label>
+                <label><input type="checkbox" name="language" value="java">Java</label>
+                <label><input type="checkbox" name="language" value="javascript">JavaScript</label>
+            </div>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</div2>
+</body>
+</html>
